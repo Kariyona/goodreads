@@ -1,0 +1,131 @@
+@media screen and (max-width: 480px) {
+    header {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+        padding: 1rem;
+        justify-items: center;
+    }
+
+    .nav {
+        display: none;
+    }
+    .search-bar {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .banner-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+        text-align: center;
+        justify-items: center;
+    }
+
+    .banner-book,
+    .banner-trophy {
+        max-width: 200px;
+    }
+
+    .intro-features {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 2rem 1.25rem;
+    }
+
+    .books {
+        display: grid;
+        /* grid-template-columns: repeat(2,1fr); */
+        
+        /* 2 columns vs 1 column */
+        grid-template-columns: 1fr;
+
+        gap: 1rem;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        text-align: center;
+        justify-items: center;
+    }
+
+    h2 {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 955px){
+    header {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem 1.5rem;
+    }
+    .nav {
+        display: none;
+    }
+
+    .banner-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        text-align: center;
+        justify-items: center;
+    }
+
+    .banner-book,
+    .banner-trophy {
+        max-width: 250px;
+    }
+
+    .intro-features {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2.5rem;
+        padding: 2.5rem 2rem;
+    }
+
+    .books {
+        grid-template-columns: repeat(3,1fr);
+        gap: 1.25rem;
+    }
+
+    footer {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+}
+
+@media screen and (min-width: 956px) {
+    header {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        align-items: center;
+        gap: 2rem;
+        padding: 1rem 2rem
+    }
+
+    .nav {
+        display: block;
+    }
+
+    .banner-content {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .books {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    footer {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
